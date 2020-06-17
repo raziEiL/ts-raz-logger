@@ -6,7 +6,7 @@
 
 ## Code Usages
 ```JS
-import logger from "ts-raz-lib";
+import logger from "ts-raz-logger";
 const log = logger();
 log.info("[index.js]", "hi");
 // Load custom config
@@ -14,7 +14,7 @@ const cLog = logger("./src/logger.json");
 clog.info("[index.js]", "hi");
 ```
 ```JS
-import logger from "ts-raz-lib";
+import logger from "ts-raz-logger";
 import { f_moduleName } from "ts-raz-util";
 const log = logger();
 const TAG = f_moduleName(module);
