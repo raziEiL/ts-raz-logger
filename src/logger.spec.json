@@ -1,0 +1,30 @@
+{
+    "production": {
+        "silent": false,
+        "level": "custom prod",
+        "toFile": false,
+        "inspect": {
+            "depth": 20,
+            "showHidden": false
+        },
+        "format": {
+            "timestamp": false,
+            "pid": false,
+            "level": true
+        }
+    },
+    "dev": {
+        "silent": false,
+        "level": "custom debug",
+        "toFile": false,
+        "inspect": {
+            "depth": 100,
+            "showHidden": false
+        },
+        "format": {
+            "timestamp": true,
+            "pid": true,
+            "level": true
+        }
+    }
+}

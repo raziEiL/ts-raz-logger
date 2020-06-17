@@ -1,8 +1,9 @@
 {
-    "name": "ts-lint-template",
+    "name": "ts-raz-logger",
     "version": "1.0.0",
-    "description": "Personal template for future typescript projects",
+    "description": "Personal configuration of winston logger",
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "jest --detectOpenHandles --no-cache ./*",
         "start": "node --unhandled-rejections=strict dist/index.js",
@@ -14,12 +15,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/raziEiL/ts-lint-template.git"
+        "url": "https://github.com/raziEiL/ts-raz-logger.git"
     },
     "keywords": [],
     "author": "Denis Medvedev (raziEiL)",
     "license": "ISC",
-    "homepage": "https://github.com/raziEiL/ts-lint-template#readme",
+    "homepage": "https://github.com/raziEiL/ts-raz-logger#readme",
+    "files": [
+        "dist/**/*"
+    ],
     "jest": {
         "roots": [
             "<rootDir>/src"
@@ -37,13 +41,18 @@
             "node"
         ]
     },
-    "dependencies": {},
+    "dependencies": {
+        "ts-raz-util": "^1.0.0",
+        "winston": "^3.2.1"
+    },
     "devDependencies": {
         "@types/jest": "^25.2.1",
         "@types/node": "^13.13.2",
+        "@types/triple-beam": "^1.3.1",
         "@typescript-eslint/eslint-plugin": "^2.27.0",
         "@typescript-eslint/eslint-plugin-tslint": "^2.27.0",
         "@typescript-eslint/parser": "^2.27.0",
+        "dotenv": "^8.2.0",
         "eslint": "^6.8.0",
         "eslint-plugin-import": "^2.20.2",
         "eslint-plugin-no-null": "^1.0.2",
