@@ -34,7 +34,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Build & Run",
+            "name": "Build & Run TS",
             "program": "${workspaceFolder}\\src\\index.ts",
             "preLaunchTask": "npm: build:debug",
             "outFiles": ["${workspaceFolder}\\dist\\index.js"],
@@ -42,9 +42,15 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Run",
+            "name": "Run TS",
             "program": "${workspaceFolder}\\src\\index.ts",
             "outFiles": ["${workspaceFolder}\\dist\\index.js"],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run JS",
+            "program": "${file}"
         }
     ]
 }
